@@ -13,6 +13,7 @@
             $this->load->database();
             if ($this->session->userdata('level')!="admin") {
                 redirect('login','refresh');
+                
             }
         }
 

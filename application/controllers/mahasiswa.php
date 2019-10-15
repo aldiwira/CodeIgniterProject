@@ -18,7 +18,7 @@ class mahasiswa extends CI_Controller {
 
     public function index()
     {
-        $data['title']="List Mahasiswa";
+        $data['title']="List mahasiswa";
         $data['mahasiswa']=$this->mahasiswa_model->getData()->result();
         if ($this->input->post('key')) {
             $keyword=$this->input->post('key');
